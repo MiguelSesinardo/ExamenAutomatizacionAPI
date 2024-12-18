@@ -4,15 +4,15 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
-
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
+
 
 public class PetStoreStep {
 
 
     Response response;
     private String urlBase;
+
     public void urlBase(String url) {
 
         urlBase = url;
@@ -52,7 +52,6 @@ public class PetStoreStep {
 
     }
 
-    //Consulta
     public void consultarOrden(int idCompra) {
         response = RestAssured
                 .given()

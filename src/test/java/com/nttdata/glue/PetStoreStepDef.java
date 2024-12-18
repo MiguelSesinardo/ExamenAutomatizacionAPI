@@ -35,7 +35,6 @@ public class PetStoreStepDef {
         tienda.validarIdCompra(idCompra);
     }
 
-    //Consulta
 
     @When("consulto el numero de orden con {int}")
     public void consultoElNumeroDeOrdenConIdCompra(int idCompra) {
